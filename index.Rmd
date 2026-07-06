@@ -1,0 +1,12 @@
+---
+title: "Interactive Training Tutorial"
+author: "Santiago Rojas"
+site: bookdown::bookdown_site
+documentclass: book
+---
+
+# Welcome {-}
+
+Welcome to the tutorial to Build an Interactive Video Training.
+
+Use the menu on the left to navigate through the different steps.

@@ -1,0 +1,13 @@
+book_filename: "statistics-tutorial"
+output_dir: "docs"
+
+rmd_files:
+  - "index.Rmd"
+  - "01-setup-programs.Rmd"
+  - "02-create-a-scene.Rmd"
+
+delete_merged_file: true
+
+language:
+  ui:
+    chapter_name: ""

@@ -1,0 +1,15 @@
+# Setup Programs {#setup-programs}
+
+This chapter explains how to install and configure the programs required for the tutorial.
+
+## Install Unity
+
+Instructions for installing Unity go here.
+
+## Install Meetlink
+
+Instructions for installing Meetlink go here.
+
+## Verify the Installation
+
+Instructions for confirming that both programs work correctly go here.
