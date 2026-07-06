@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Create a Scene | Interactive Training Tutorial</title>
-  <meta name="description" content="3 Create a Scene | Interactive Training Tutorial" />
+  <title>2 Design the Training Plan | Interactive Training Tutorial</title>
+  <meta name="description" content="2 Design the Training Plan | Interactive Training Tutorial" />
   <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3 Create a Scene | Interactive Training Tutorial" />
+  <meta property="og:title" content="2 Design the Training Plan | Interactive Training Tutorial" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Create a Scene | Interactive Training Tutorial" />
+  <meta name="twitter:title" content="2 Design the Training Plan | Interactive Training Tutorial" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="design-training-plan.html"/>
-
+<link rel="prev" href="setup-programs.html"/>
+<link rel="next" href="create-a-scene.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -116,63 +116,37 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="create-a-scene" class="section level1 hasAnchor" number="3">
-<h1><span class="header-section-number">3</span> Create a Scene<a href="create-a-scene.html#create-a-scene" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>These are the steps to create a scene using the Unity Project Template [name of project here]</p>
-<div id="steps" class="section level2 hasAnchor" number="3.1">
-<h2><span class="header-section-number">3.1</span> STEPS<a href="create-a-scene.html#steps" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="import-videos-to-unity" class="section level3 hasAnchor" number="3.1.1">
-<h3><span class="header-section-number">3.1.1</span> 1.Import Videos to Unity<a href="create-a-scene.html#import-videos-to-unity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>In the Project Panel, save the videos on the Project_Videos folder.</p>
-</div>
-<div id="create-a-new" class="section level3 hasAnchor" number="3.1.2">
-<h3><span class="header-section-number">3.1.2</span> 2. Create a new:<a href="create-a-scene.html#create-a-new" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>o In the project Panel, open the following path Assets &gt; Scenes &gt; Project_Scenes
-o To create a new scene copy and paste the first scene (i.e., Ctrl C and Ctrl V)
-o Rename that scene. To be more organized write the sequence of videos you will follow (e.g., 1. Introduction video)
-o Each scene corresponds to one video.</p>
-</div>
-<div id="add-the-videos-to-the-training-project" class="section level3 hasAnchor" number="3.1.3">
-<h3><span class="header-section-number">3.1.3</span> 3.Add the Video(s) to the Training Project<a href="create-a-scene.html#add-the-videos-to-the-training-project" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>o Double click on the current scene you want to work on. To check that you are working on that scene make sure that the name of the scene is showing in the Hierarchy panel
-o Go to the Hierarchy Panel, open the following path SceneStart &gt; Menu &gt; VIDEO PLAYER
-o Go to the Inspector Panel
-o Upload your video into the Video Clip section (Path: Video Player &gt; Video Clip)
-o Save</p>
-</div>
-<div id="set-questions" class="section level3 hasAnchor" number="3.1.4">
-<h3><span class="header-section-number">3.1.4</span> 4.Set Questions<a href="create-a-scene.html#set-questions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>o Go to the Hierarchy Panel, to the following path Menu &gt; SCENE MANAGER
-o Go the to the Inspector Panel into the Dynamic Sequence Setup
-o You will see two different subsections: “Pause At” and “Question Canvases”. Under “Pause At” you will determine the number of questions you will have and their display time in the video you previously uploaded on STEP 12.
-o Edit the times when you want each question to appear.
-o drag each question canvas into the Question Canvas List.
-o Make sure that the question list and pause list have the same number of items</p>
-<p>STEP 14. D
-STEP 15. D
-STEP 16. d
-Make sure the order of the question canvases matches the order you want them to appear during the video.
-7. Edit the Beginning Screen
-1. Click on BeginSceneCanvas.
-2. Edit the header text to say what you want the training introduction to say.
-8. Edit the End Screen
-1. Click on End Screen inside the Scene Start prefab.
-2. Type the name of the next scene you want to load.
-Be very careful that the scene name is typed exactly the same way it appears in your scene list.
-If this is the final scene, type:
-Last Scene
-Make sure it matches exactly with the name used in your scene list.
-9. Add the Scene to the Build Profile
-Every time you create or navigate to a new scene, you must add it to the build profile.
-1. With the scene open, click File.
-2. Scroll down and click Build Profiles.
-3. Click Open Scene List.
-4. Click Add Open Scenes.
-This adds the scene you are currently working on to the build.
-10. Save the Scene
-Press:
-Ctrl + S
-This saves the scene.</p>
+<div id="design-training-plan" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> Design the Training Plan<a href="design-training-plan.html#design-training-plan" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter explains how to prepare before start using Unity.</p>
+<div id="step-1.-decide-what-type-of-video-format-you-would-like-to-use.-there-are-two-main-options" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> STEP 1. Decide what type of video format you would like to use. There are two main options:<a href="design-training-plan.html#step-1.-decide-what-type-of-video-format-you-would-like-to-use.-there-are-two-main-options" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="option-1-one-single-video-with-multiple-embedded-questions" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> OPTION 1: One single video with multiple embedded questions<a href="design-training-plan.html#option-1-one-single-video-with-multiple-embedded-questions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: lower-roman">
+<li>The training video plays as one continuous video. At specific points during the video, the video pauses and a question appear on the screen. The participant must answer the question before the video continues. Once the participant selects an answer, the video resumes and continues until the next programmed question appears.</li>
+<li>Useful when you want all participants to watch the same video sequence while still checking their understanding throughout the training.
+### OPTION 2: One single video with different outcomes depending on the answers</li>
+<li>The video changes depending on how the participant answers each question.</li>
+<li>Useful when you want that the participants decision produces a different outcome on the storyline or setting.</li>
+<li>To use this format, you will need to have all the different videos in advance. This includes the instructions that should appear during the video, the questions that will be asked, the answer options for each question, and the correct answer for each question. If incorrect answers produce feedback, you will also need to write the feedback that should appear after each incorrect response.
+STEP 2. Prepare the number of questions that should appear in each training module with its corresponding possible answers.
+Currently, you can only chose between two templates. One with 2 and 4 multiple answers)
+STEP 3. Prepare the instructions that you will provide before each question so your participants know what they should be doing while watching the video.
+STEP 4. Prepare the feedback that you will provide on each question if the participant chooses the correct answer, and the incorrect answer.
+STEP 5. Identify the time where the instructions and questions will appear in the video.
+For example, you may want an instruction to appear one minute before a question, or you may want the question to appear immediately after a specific behavior, or scenario is shown in the video.
+STEP 6. Download Unity and Unity Hub and create an account
+STEP 7. Save the project template in your computer
+STEP 8. Open Unity Hub and follow the instructions bellow:
+o Click “Projects” on the left panel
+o Click on “Add”
+o Click on “Add project from disk”
+o Choose the folder where you save the project template and press “Open”
+o You should see a new row on the project window of Unity Hub
+o Click on the project and wait for Unity Engine to open
+STEP 9. Complete the annex documents to structure your video</li>
+</ol>
 
 </div>
 </div>
@@ -182,8 +156,8 @@ This saves the scene.</p>
           </div>
         </div>
       </div>
-<a href="design-training-plan.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="setup-programs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="create-a-scene.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

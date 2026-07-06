@@ -2,5 +2,12 @@ setup-programs
 install-unity
 install-meetlink
 verify-the-installation
+design-training-plan
+step-1.-decide-what-type-of-video-format-you-would-like-to-use.-there-are-two-main-options
+option-1-one-single-video-with-multiple-embedded-questions
 create-a-scene
-basic-probability
+steps
+import-videos-to-unity
+create-a-new
+add-the-videos-to-the-training-project
+set-questions
