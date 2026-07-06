@@ -1,0 +1,28 @@
+# Design the Training Plan {#design-training-plan}
+
+This chapter explains how to prepare before start using Unity. 
+
+## STEP 1.	Decide what type of video format you would like to use. There are two main options:
+### OPTION 1: One single video with multiple embedded questions
+i.	The training video plays as one continuous video. At specific points during the video, the video pauses and a question appear on the screen. The participant must answer the question before the video continues. Once the participant selects an answer, the video resumes and continues until the next programmed question appears. 
+ii.	Useful when you want all participants to watch the same video sequence while still checking their understanding throughout the training.
+### OPTION 2: One single video with different outcomes depending on the answers
+i.	The video changes depending on how the participant answers each question. 
+ii.	Useful when you want that the participants decision produces a different outcome on the storyline or setting. 
+iii.	To use this format, you will need to have all the different videos in advance. This includes the instructions that should appear during the video, the questions that will be asked, the answer options for each question, and the correct answer for each question. If incorrect answers produce feedback, you will also need to write the feedback that should appear after each incorrect response.
+STEP 2.	Prepare the number of questions that should appear in each training module with its corresponding possible answers. 
+Currently, you can only chose between two templates. One with 2 and 4 multiple answers)
+STEP 3.	Prepare the instructions that you will provide before each question so your participants know what they should be doing while watching the video. 
+STEP 4.	Prepare the feedback that you will provide on each question if the participant chooses the correct answer, and the incorrect answer. 
+STEP 5.	Identify the time where the instructions and questions will appear in the video. 
+For example, you may want an instruction to appear one minute before a question, or you may want the question to appear immediately after a specific behavior, or scenario is shown in the video. 
+STEP 6.	Download Unity and Unity Hub and create an account
+STEP 7.	Save the project template in your computer
+STEP 8.	Open Unity Hub and follow the instructions bellow:
+o	Click “Projects” on the left panel 
+o	Click on “Add” 
+o	Click on “Add project from disk”
+o	Choose the folder where you save the project template and press “Open”
+o	You should see a new row on the project window of Unity Hub
+o	Click on the project and wait for Unity Engine to open
+STEP 9.	Complete the annex documents to structure your video

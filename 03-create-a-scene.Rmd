@@ -1,0 +1,54 @@
+# Create a Scene {#create-a-scene}
+
+These are the steps to create a scene using the Unity Project Template [name of project here]
+
+## STEPS 
+### 1.Import Videos to Unity
+In the Project Panel, save the videos on the Project_Videos folder. 
+
+### 2.	Create a new: 
+o	In the project Panel, open the following path Assets > Scenes > Project_Scenes
+o	To create a new scene copy and paste the first scene (i.e., Ctrl C and Ctrl V)
+o	Rename that scene. To be more organized write the sequence of videos you will follow (e.g., 1. Introduction video)
+o	Each scene corresponds to one video. 
+
+### 3.Add the Video(s) to the Training Project
+o	Double click on the current scene you want to work on. To check that you are working on that scene make sure that the name of the scene is showing in the Hierarchy panel
+o	Go to the Hierarchy Panel, open the following path SceneStart > Menu > VIDEO PLAYER
+o	Go to the Inspector Panel
+o	Upload your video into the Video Clip section (Path: Video Player > Video Clip)
+o	Save
+
+### 4.Set Questions
+o	Go to the Hierarchy Panel, to the following path Menu > SCENE MANAGER
+o	Go the to the Inspector Panel into the Dynamic Sequence Setup
+o	You will see two different subsections: “Pause At” and “Question Canvases”. Under “Pause At” you will determine the number of questions you will have and their display time in the video you previously uploaded on STEP 12. 
+o	Edit the times when you want each question to appear. 
+o	drag each question canvas into the Question Canvas List.
+o	Make sure that the question list and pause list have the same number of items
+
+STEP 14.	D
+STEP 15.	D
+STEP 16.	d
+Make sure the order of the question canvases matches the order you want them to appear during the video.
+7. Edit the Beginning Screen
+1.	Click on BeginSceneCanvas.
+2.	Edit the header text to say what you want the training introduction to say.
+8. Edit the End Screen
+1.	Click on End Screen inside the Scene Start prefab.
+2.	Type the name of the next scene you want to load.
+Be very careful that the scene name is typed exactly the same way it appears in your scene list.
+If this is the final scene, type:
+Last Scene
+Make sure it matches exactly with the name used in your scene list.
+9. Add the Scene to the Build Profile
+Every time you create or navigate to a new scene, you must add it to the build profile.
+1.	With the scene open, click File.
+2.	Scroll down and click Build Profiles.
+3.	Click Open Scene List.
+4.	Click Add Open Scenes.
+This adds the scene you are currently working on to the build.
+10. Save the Scene
+Press:
+Ctrl + S
+This saves the scene.
