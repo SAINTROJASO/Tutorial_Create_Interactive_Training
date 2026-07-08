@@ -1,54 +1,254 @@
 # Create a Scene {#create-a-scene}
 
-These are the steps to create a scene using the Unity Project Template [name of project here]
+This chapter explains how to create and configure a scene using the Unity project template **[Project Template Name]**.
 
-## STEPS 
-### 1.Import Videos to Unity
-In the Project Panel, save the videos on the Project_Videos folder. 
+In this project template, each scene corresponds to one video. For example, a training containing three videos will normally require three separate scenes.
 
-### 2.	Create a new: 
-o	In the project Panel, open the following path Assets > Scenes > Project_Scenes
-o	To create a new scene copy and paste the first scene (i.e., Ctrl C and Ctrl V)
-o	Rename that scene. To be more organized write the sequence of videos you will follow (e.g., 1. Introduction video)
-o	Each scene corresponds to one video. 
+---
 
-### 3.Add the Video(s) to the Training Project
-o	Double click on the current scene you want to work on. To check that you are working on that scene make sure that the name of the scene is showing in the Hierarchy panel
-o	Go to the Hierarchy Panel, open the following path SceneStart > Menu > VIDEO PLAYER
-o	Go to the Inspector Panel
-o	Upload your video into the Video Clip section (Path: Video Player > Video Clip)
-o	Save
+## Step 1: Import the Videos into Unity
 
-### 4.Set Questions
-o	Go to the Hierarchy Panel, to the following path Menu > SCENE MANAGER
-o	Go the to the Inspector Panel into the Dynamic Sequence Setup
-o	You will see two different subsections: “Pause At” and “Question Canvases”. Under “Pause At” you will determine the number of questions you will have and their display time in the video you previously uploaded on STEP 12. 
-o	Edit the times when you want each question to appear. 
-o	drag each question canvas into the Question Canvas List.
-o	Make sure that the question list and pause list have the same number of items
+Begin by importing the videos that you plan to use in the training.
 
-STEP 14.	D
-STEP 15.	D
-STEP 16.	d
-Make sure the order of the question canvases matches the order you want them to appear during the video.
-7. Edit the Beginning Screen
-1.	Click on BeginSceneCanvas.
-2.	Edit the header text to say what you want the training introduction to say.
-8. Edit the End Screen
-1.	Click on End Screen inside the Scene Start prefab.
-2.	Type the name of the next scene you want to load.
-Be very careful that the scene name is typed exactly the same way it appears in your scene list.
-If this is the final scene, type:
+1. Locate the **Project** panel in Unity.
+2. Open the `Project_Videos` folder.
+3. Drag the video files from your computer into the `Project_Videos` folder.
+4. Wait for Unity to finish importing the files.
+
+> **Tip:** Give each video a short, descriptive filename that reflects its position in the training sequence.
+
+For example:
+
+```text
+01-introduction.mp4
+02-demonstration.mp4
+03-practice.mp4
+```
+
+---
+
+## Step 2: Create a New Scene
+
+Create a separate scene for each video in the training.
+
+1. In the **Project** panel, open the following path:
+
+   `Assets > Scenes > Project_Scenes`
+
+2. Select the first existing scene.
+3. Copy the scene by pressing `Ctrl + C`.
+4. Paste a copy by pressing `Ctrl + V`.
+5. Rename the copied scene.
+
+Use a sequence number and a descriptive title to keep the scenes organized.
+
+For example:
+
+```text
+01 Introduction
+02 Demonstration
+03 Practice
+```
+
+> **Important:** Each scene should correspond to one video.
+
+---
+
+## Step 3: Add a Video to the Scene
+
+After creating the scene, assign the corresponding video to it.
+
+1. Double-click the scene you want to edit.
+2. Confirm that the correct scene name appears at the top of the **Hierarchy** panel.
+3. In the **Hierarchy** panel, open the following path:
+
+   `SceneStart > Menu > VIDEO PLAYER`
+
+4. Select **VIDEO PLAYER**.
+5. Locate the **Inspector** panel.
+6. Find the **Video Player** component.
+7. Locate the **Video Clip** field.
+8. Drag the appropriate video from the `Project_Videos` folder into the **Video Clip** field.
+9. Save the scene by pressing `Ctrl + S`.
+
+> **Check:** Play the scene briefly and confirm that the correct video appears.
+
+---
+
+## Step 4: Configure the Questions
+
+Use the **Scene Manager** to determine when questions will appear during the video.
+
+### Open the Dynamic Sequence Setup
+
+1. In the **Hierarchy** panel, open the following path:
+
+   `Menu > SCENE MANAGER`
+
+2. Select **SCENE MANAGER**.
+3. In the **Inspector** panel, locate **Dynamic Sequence Setup**.
+
+You will see two main lists:
+
+| List | Purpose |
+|---|---|
+| **Pause At** | Determines when the video pauses for each question |
+| **Question Canvases** | Determines which question appears at each pause |
+
+### Configure the Pause Times
+
+Under **Pause At**:
+
+1. Set the number of items equal to the number of questions in the scene.
+2. Enter the video time at which each question should appear.
+3. Arrange the timestamps in chronological order.
+
+For example:
+
+| Item | Pause time |
+|---:|---:|
+| 0 | 60 seconds |
+| 1 | 120 seconds |
+| 2 | 180 seconds |
+
+In this example, the questions will appear at 1:00, 2:00, and 3:00 minutes.
+
+### Add the Question Canvases
+
+Under **Question Canvases**:
+
+1. Set the number of items equal to the number of pause times.
+2. Locate the question canvases in the **Hierarchy** panel.
+3. Drag each question canvas into the corresponding position in the list.
+4. Arrange the question canvases in the order in which they should appear.
+
+> **Important:** The **Pause At** list and the **Question Canvases** list must contain the same number of items.
+
+For example:
+
+| List position | Pause time | Question canvas |
+|---:|---:|---|
+| 0 | 60 seconds | Question 1 |
+| 1 | 120 seconds | Question 2 |
+| 2 | 180 seconds | Question 3 |
+
+The first question canvas will appear at the first pause time. The second question canvas will appear at the second pause time, and so forth.
+
+---
+
+## Step 5: Verify the Question Order
+
+Before continuing, confirm that:
+
+- Every pause time has a corresponding question canvas.
+- The pause times are arranged chronologically.
+- The question canvases are arranged in the intended order.
+- The number of items in both lists is identical.
+- Each question is associated with the correct point in the video.
+
+> **Warning:** Questions may appear at the wrong times when the order of the question canvases does not match the order of the pause times.
+
+---
+
+## Step 6: Edit the Beginning Screen
+
+The beginning screen introduces the training before the video starts.
+
+1. Locate **BeginSceneCanvas** in the **Hierarchy** panel.
+2. Expand the canvas to locate its text elements.
+3. Select the header text.
+4. In the **Inspector** panel, replace the existing text with the introduction for your training.
+5. Save the scene.
+
+For example:
+
+> Welcome to the caregiver training. In this module, you will observe a caregiver responding to a child during a daily routine.
+
+Keep the introduction:
+
+- Brief
+- Easy to read
+- Relevant to the video
+- Consistent with the purpose of the training module
+
+---
+
+## Step 7: Edit the End Screen
+
+The end screen determines which scene will open after the current scene is completed.
+
+1. Locate **End Screen** inside the **SceneStart** prefab.
+2. Select the field that identifies the next scene.
+3. Enter the exact name of the scene that should open next.
+
+For example:
+
+```text
+02 Demonstration
+```
+
+> **Important:** The scene name must be written exactly as it appears in the Unity scene list. Differences in capitalization, spacing, or punctuation may prevent Unity from opening the scene.
+
+### Configure the Final Scene
+
+When the current scene is the final scene in the training, enter:
+
+```text
 Last Scene
-Make sure it matches exactly with the name used in your scene list.
-9. Add the Scene to the Build Profile
-Every time you create or navigate to a new scene, you must add it to the build profile.
-1.	With the scene open, click File.
-2.	Scroll down and click Build Profiles.
-3.	Click Open Scene List.
-4.	Click Add Open Scenes.
-This adds the scene you are currently working on to the build.
-10. Save the Scene
-Press:
+```
+
+Make sure that `Last Scene` matches the text expected by the project template exactly.
+
+---
+
+## Step 8: Add the Scene to the Build Profile
+
+Every new scene must be added to the Unity build profile.
+
+1. Open the scene that you want to add.
+2. Select **File** from the Unity menu.
+3. Select **Build Profiles**.
+4. Click **Open Scene List**.
+5. Click **Add Open Scenes**.
+6. Confirm that the scene appears in the scene list.
+
+Repeat this process whenever you create a new scene.
+
+> **Important:** A scene that is not included in the build profile may work inside the Unity Editor but fail to open in the completed application.
+
+---
+
+## Step 9: Save the Scene
+
+Save the scene after making any changes by pressing:
+
+```text
 Ctrl + S
-This saves the scene.
+```
+
+You should save the scene after:
+
+- Assigning a video
+- Changing question timestamps
+- Adding question canvases
+- Editing the beginning screen
+- Editing the end screen
+- Adding the scene to the build profile
+
+---
+
+## Scene Configuration Checklist
+
+Before moving to the next scene, confirm that:
+
+- [ ] The scene has a clear and unique name.
+- [ ] The correct video has been assigned.
+- [ ] The video plays correctly.
+- [ ] The number of pause times matches the number of questions.
+- [ ] Each question canvas is in the correct position.
+- [ ] The beginning-screen text has been updated.
+- [ ] The next-scene name has been entered correctly.
+- [ ] The scene has been added to the build profile.
+- [ ] The scene has been saved.
+
+After completing this checklist, repeat the process for the next video in the training.
