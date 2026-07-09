@@ -161,7 +161,7 @@
 <p>Begin by importing the videos that you plan to use in the training.</p>
 <ol style="list-style-type: decimal">
 <li>Locate the <strong>Project</strong> panel in Unity.</li>
-<li>Open the <code>Project_Videos</code> folder.</li>
+<li>Open the <code>1_Project_Videos</code> folder.</li>
 <li>Drag the video files from your computer into the <code>Project_Videos</code> folder.</li>
 <li>Wait for Unity to finish importing the files.</li>
 </ol>
@@ -179,17 +179,20 @@
 <p>Create a separate scene for each video in the training.</p>
 <ol style="list-style-type: decimal">
 <li><p>In the <strong>Project</strong> panel, open the following path:</p>
-<p><code>Assets &gt; Scenes &gt; Project_Scenes</code></p></li>
-<li><p>Select the first existing scene.</p></li>
-<li><p>Copy the scene by pressing <code>Ctrl + C</code>.</p></li>
-<li><p>Paste a copy by pressing <code>Ctrl + V</code>.</p></li>
-<li><p>Rename the copied scene.</p></li>
+<p><code>Assets &gt; Scenes &gt; 2_Project_Scenes</code></p></li>
+</ol>
+<blockquote>
+<p><strong>Important:</strong> Take into account that each scene represents one video, so if you have multiple scenes, you will have to create multiple scenes.</p>
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>In the right side you will see the following scenes 0_Menu_Scene, X_Template and LAST_SCENE</li>
+<li>To create a new scene right click and change the name to 1_Scene_Name</li>
 </ol>
 <p>Use a sequence number and a descriptive title to keep the scenes organized.</p>
 <p>For example:</p>
-<pre class="text"><code>01 Introduction
-02 Demonstration
-03 Practice</code></pre>
+<pre class="text"><code>01_Introduction
+02_Demonstration
+03_Practice</code></pre>
 <blockquote>
 <p><strong>Important:</strong> Each scene should correspond to one video.</p>
 </blockquote>
@@ -199,7 +202,7 @@
 <h2><span class="header-section-number">3.3</span> Step 3: Add a Video to the Scene<a href="create-a-scene.html#step-3-add-a-video-to-the-scene" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>After creating the scene, assign the corresponding video to it.</p>
 <ol style="list-style-type: decimal">
-<li><p>Double-click the scene you want to edit.</p></li>
+<li><p>Double-click the scene you want to upload the videos.</p></li>
 <li><p>Confirm that the correct scene name appears at the top of the <strong>Hierarchy</strong> panel.</p></li>
 <li><p>In the <strong>Hierarchy</strong> panel, open the following path:</p>
 <p><code>SceneStart &gt; Menu &gt; VIDEO PLAYER</code></p></li>
@@ -207,7 +210,7 @@
 <li><p>Locate the <strong>Inspector</strong> panel.</p></li>
 <li><p>Find the <strong>Video Player</strong> component.</p></li>
 <li><p>Locate the <strong>Video Clip</strong> field.</p></li>
-<li><p>Drag the appropriate video from the <code>Project_Videos</code> folder into the <strong>Video Clip</strong> field.</p></li>
+<li><p>Drag the appropriate video from the <code>1_Project_Videos</code> folder into the <strong>Video Clip</strong> field.</p></li>
 <li><p>Save the scene by pressing <code>Ctrl + S</code>.</p></li>
 </ol>
 <blockquote>
@@ -217,6 +220,21 @@
 </div>
 <div id="step-4-configure-the-questions" class="section level2 hasAnchor" number="3.4">
 <h2><span class="header-section-number">3.4</span> Step 4: Configure the Questions<a href="create-a-scene.html#step-4-configure-the-questions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<blockquote>
+<p><strong>Note:</strong> In this section you will to edit the content of the instructions for each question, the content of each question, the content of the multiple answers for each questions, which answer will be considered correct, the content of the correct feedback (i.e., when answering correct) and corrective feedback (i.e., when answering incorrect)</p>
+</blockquote>
+<ol style="list-style-type: decimal">
+<li>Use the template you created on the Training Plan to identify the number of questions you will ask in the video, and how many multiple answers each question will have (you can choose between 2 and 4 multiple answers).</li>
+<li>Copy the objects Two multiple choice answers or Four multiple choice answers, so that they correspond to your number of questions</li>
+<li>Go to the inspector panel to the section <strong><em>EDIT EVERYTHING BELOW THIS</em></strong> to:
+3.1. Edit the content of the instruction text: change the text that says <code>Write the content of the instructions here</code>
+3.2. Edit the content of the question: change the text that says <code>Write the content of the question here</code>
+3.3. Edit the content of the multiple answers: change the text that says <code>Write the content of the answer here</code>
+3.4. Edit the content of the correct feedback: change the text that says <code>Write your corrective feedback here</code>
+3.5. Edit the content of the corrective feedback: change the text that says <code>Write your corrective feedback here</code></li>
+<li>To choose which answer will be considered as correct, write the number of the answer in the Correct Button Index section.
+&gt; <strong>Note:</strong> You have the option of providing more detailes corrective feedback if the participant answers wrong multiple times the same question. You can write more detailed feedback on the subsections <code>Wrong feedback 2</code>, <code>Wrong Feedback 3</code> and <code>Wrong feedback 4</code>.</li>
+</ol>
 <p>Use the <strong>Scene Manager</strong> to determine when questions will appear during the video.</p>
 <div id="open-the-dynamic-sequence-setup" class="section level3 hasAnchor" number="3.4.1">
 <h3><span class="header-section-number">3.4.1</span> Open the Dynamic Sequence Setup<a href="create-a-scene.html#open-the-dynamic-sequence-setup" class="anchor-section" aria-label="Anchor link to header"></a></h3>

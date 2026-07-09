@@ -11,7 +11,7 @@ In this project template, each scene corresponds to one video. For example, a tr
 Begin by importing the videos that you plan to use in the training.
 
 1. Locate the **Project** panel in Unity.
-2. Open the `Project_Videos` folder.
+2. Open the `1_Project_Videos` folder.
 3. Drag the video files from your computer into the `Project_Videos` folder.
 4. Wait for Unity to finish importing the files.
 
@@ -33,21 +33,21 @@ Create a separate scene for each video in the training.
 
 1. In the **Project** panel, open the following path:
 
-   `Assets > Scenes > Project_Scenes`
+   `Assets > Scenes > 2_Project_Scenes`
 
-2. Select the first existing scene.
-3. Copy the scene by pressing `Ctrl + C`.
-4. Paste a copy by pressing `Ctrl + V`.
-5. Rename the copied scene.
+> **Important:** Take into account that each scene represents one video, so if you have multiple scenes, you will have to create multiple scenes. 
+
+2. In the right side you will see the following scenes 0_Menu_Scene, X_Template and LAST_SCENE
+3. To create a new scene right click and change the name to 1_Scene_Name
 
 Use a sequence number and a descriptive title to keep the scenes organized.
 
 For example:
 
 ```text
-01 Introduction
-02 Demonstration
-03 Practice
+01_Introduction
+02_Demonstration
+03_Practice
 ```
 
 > **Important:** Each scene should correspond to one video.
@@ -58,7 +58,7 @@ For example:
 
 After creating the scene, assign the corresponding video to it.
 
-1. Double-click the scene you want to edit.
+1. Double-click the scene you want to upload the videos.
 2. Confirm that the correct scene name appears at the top of the **Hierarchy** panel.
 3. In the **Hierarchy** panel, open the following path:
 
@@ -68,7 +68,7 @@ After creating the scene, assign the corresponding video to it.
 5. Locate the **Inspector** panel.
 6. Find the **Video Player** component.
 7. Locate the **Video Clip** field.
-8. Drag the appropriate video from the `Project_Videos` folder into the **Video Clip** field.
+8. Drag the appropriate video from the `1_Project_Videos` folder into the **Video Clip** field.
 9. Save the scene by pressing `Ctrl + S`.
 
 > **Check:** Play the scene briefly and confirm that the correct video appears.
@@ -76,6 +76,21 @@ After creating the scene, assign the corresponding video to it.
 ---
 
 ## Step 4: Configure the Questions
+
+> **Note:** In this section you will to edit the content of the instructions for each question, the content of each question, the content of the multiple answers for each questions, which answer will be considered correct, the content of the correct feedback (i.e., when answering correct) and corrective feedback (i.e., when answering incorrect) 
+
+1. Use the template you created on the Training Plan to identify the number of questions you will ask in the video, and how many multiple answers each question will have (you can choose between 2 and 4 multiple answers). 
+2. Copy the objects Two multiple choice answers or Four multiple choice answers, so that they correspond to your number of questions
+3. Go to the inspector panel to the section **_EDIT EVERYTHING BELOW THIS_** to:
+3.1. Edit the content of the instruction text: change the text that says `Write the content of the instructions here`
+3.2. Edit the content of the question: change the text that says `Write the content of the question here`
+3.3. Edit the content of the multiple answers: change the text that says `Write the content of the answer here`
+3.4. Edit the content of the correct feedback: change the text that says `Write your corrective feedback here`
+3.5. Edit the content of the corrective feedback: change the text that says `Write your corrective feedback here`
+4. To choose which answer will be considered as correct, write the number of the answer in the Correct Button Index section.
+> **Note:** You have the option of providing more detailes corrective feedback if the participant answers wrong multiple times the same question. You can write more detailed feedback on the subsections `Wrong feedback 2`, `Wrong Feedback 3` and `Wrong feedback 4`. 
+
+
 
 Use the **Scene Manager** to determine when questions will appear during the video.
 
