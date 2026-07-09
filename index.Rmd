@@ -1,6 +1,6 @@
 ---
 title: "Interactive Training Tutorial"
-author: "Santiago Rojas"
+author: "Santiago Rojas & Garrett Woodhouse"
 site: bookdown::bookdown_site
 documentclass: book
 ---
