@@ -319,7 +319,7 @@ For example:
 ```
 
 ```{r import-project-image, echo=FALSE, out.width="80%", fig.align="center", fig.cap="Importing the project into Unity Hub."}
-knitr::include_graphics("images/Step_1.png")
+knitr::include_graphics("images/Step_1.png"
 )
 ```
 
