@@ -10,3 +10,8 @@ documentclass: book
 Welcome to the tutorial to Build an Interactive Video Training.
 
 Use the menu on the left to navigate through the different steps.
+
+If you have any questions please contact me via email:
+
+santiago.rojasotero@usu.edu
+

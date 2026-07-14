@@ -1,11 +1,11 @@
-﻿bookdown::gitbook:
+bookdown::gitbook:
   css: style.css
   split_by: chapter
   config:
     toc:
       collapse: section
       before: |
-        <li><a href="./">Statistics Tutorial</a></li>
+        <li><a href="./">Training Tutorial</a></li>
     download: false
     sharing:
       facebook: false

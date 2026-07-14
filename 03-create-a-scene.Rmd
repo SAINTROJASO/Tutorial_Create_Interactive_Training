@@ -25,8 +25,8 @@ For example:
 03-practice.mp4
 ```
 
-```{r import-project-image, echo=FALSE, out.width="80%", fig.align="center", fig.cap="Importing the project into Unity Hub."}
-knitr::include_graphics("D:\Documentos\°Proyectos\Github Repositories\Tutorial_Create_Interactive_Training\images\Step 1.png")
+```{r import-project-image, echo=FALSE, out.width="100%", fig.align="center", fig.cap="Importing the project into Unity Hub."}
+knitr::include_graphics("images/Step_1.png")
 ```
 
 ---
@@ -149,8 +149,9 @@ In this example, the questions will appear at 1:00, 2:00, and 3:00 minutes.
 
 ### Verify that the scenes are connected
 
-1. Open the scenes in the Project panel `ASSETS > 1_SCENES > PROJECT SCENES`
-2. Leave the scenes open End scren in the hierarchy panel and 
+1. Open the scenes in the ***Project*** panel `ASSETS > 1_SCENES > PROJECT SCENES`
+2. Leave the scenes open 
+3. In the ***Hierarchy*** panel, in the subsection **Scence Settings**write the name of the scene that will appear after the video ends. If it is the end of the tutorial, write `LAST SCENE`, so that it connects to the last scene of the project. 
 
 
 ---
