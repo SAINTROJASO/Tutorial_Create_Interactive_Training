@@ -104,11 +104,15 @@ h1.title {
   font-weight: 600;
 }
 
-/* Makes the main chapter content wider */
-.book .book-body .page-wrapper .page-inner {
+/* Makes the chapter content wider and reduces the side margins */
+.book .book-body .page-wrapper .page-inner,
+.book .book-body .page-wrapper .page-inner section.normal {
   max-width: 1200px !important;
-  width: calc(100% - 80px) !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.book .book-body .page-wrapper .page-inner {
   padding-left: 40px !important;
   padding-right: 40px !important;
-  box-sizing: border-box;
 }
